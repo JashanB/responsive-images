@@ -24,27 +24,18 @@
             background-position: center;
         }
 
-        .blur-load.loaded > img {
-            opacity: 1;
-        }
-
-        .blur-load > img {
-            opacity: 0;
-            transition: opacity 200ms ease-in-out;
-        }
-
     </style>
 </head>
 
 <body style="margin: 0">
     <div class="grid" id="image-container">
         <div class="blur-load" style="background-image: url(imgs/img1-small.jpg)">
-            <img srcset="imgs/img1.jpg 640w" src="imgs/img1.jpg" loading="lazy" />
+            <img srcset="https://placehold.co/1600x400/png 1600w" src="https://placehold.co/1600x400/png" loading="lazy" />
         </div>
-        <div class="blur-load" style="background-image: url(imgs/img2-small.jpg)">
-            <img srcset="imgs/img2.jpg 640w" src="imgs/img2.jpg" loading="lazy" />
+        <div class="blur-load" style="background-image: url(imgs/img1-small.jpg)">
+            <img srcset="https://placehold.co/1600x400/png 1600w" src="https://placehold.co/1600x400/png" loading="lazy" />
         </div>
-        <div class="blur-load" style="background-image: url(imgs/img3-small.jpg)">
+        <!-- <div class="blur-load" style="background-image: url(imgs/img3-small.jpg)">
             <img srcset="imgs/img3.jpg 640w" src="imgs/img3.jpg" loading="lazy" />
         </div>
         <div class="blur-load" style="background-image: url(imgs/img4-small.jpg)">
@@ -79,7 +70,7 @@
         </div>
         <div class="blur-load" style="background-image: url(imgs/img4-small.jpg)">
             <img srcset="imgs/img4.jpg 640w" src="imgs/img4.jpg" loading="lazy" />
-        </div>
+        </div> -->
     </div>
     <script>
         const blurMe = document.querySelectorAll(".blur-load");
